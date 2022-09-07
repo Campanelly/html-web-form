@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Contact Us!</h1>
+      <p id="description">we'll reply ASAP</p>
+    </header>
+
+    <form id="survey-form">
+      <section class="user-data">
+          <label id="name-label">
+            <p>Name</p>
+            <input id="name" type="text" name="user-data" placeholder="Enter your Name" required></input>
+          </label>
+
+          <label id="email-label">
+            <p>Email</p>
+            <input id="email" type="email" name="user-data" placeholder="Enter your Email" required>
+          </label>
+          
+          <label id="number-label">
+            <p>Age</p>
+            <input id="number" type="number" name="user-data" placeholder="Enter your Age" min="10" max="99">
+          </label>
+       </section>
+
+       <section class="country">
+         <label>
+           <p>Select your country:</p>
+           <select name="country" id="dropdown">
+             <option value="Argentina">Argentina</option>
+             <option value="Brasil">Brasil</option>
+             <option value="Chile">Chile</option>
+             <option value="other">other</option>
+           </select>
+         </label>
+       </section>
+       
+       <section id="gender">
+         <p>You identify yourself as:</p>
+         <ul>
+           <li><label><input type="radio" name="gender" id="female" value="f" checked>Female</input></label></li>
+           <li><label><input type="radio" name="gender" id="ale" value="m" checked>Male</input></label></li>
+           <li><label><input type="radio" name="gender" id="other" value="o">Other</input></label></li>
+         </ul>
+       </section>
+
+       <section id="interest">
+         <p>Select your areas of interest:</p>
+         <ul>
+           <li><label><input type="checkbox" name="interest" id="literature" value="literature">Literature</input></label></li>
+           <li><label><input type="checkbox" name="interest" id="movies" value="movies">Movies</input></label></li>
+           <li><label><input type="checkbox" name="interest" id="music" value="music">Music</input></label></li>  
+
+         </ul>
+             
+       </section>
+
+       <section class="text">
+         <p>Leave us a message:</p>   
+         <textarea placeholder="enter your message here..."></textarea>
+       </section>
+       
+       <button type="submit" id="submit">Submit</button> 
+
+    </form>
+
+  </body>
+</html>
